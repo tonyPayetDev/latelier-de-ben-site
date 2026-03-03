@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'atelier de Ben - Restaurant Gastronomique à Saint-Denis</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">L'atelier de Ben</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À Propos</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#reservation" class="btn-reservation">Réserver</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>L'atelier de Ben<br><span class="subtitle">Restaurant Gastronomique à Saint-Denis</span></h1>
+            <p class="hero-text">Une expérience culinaire unique où la passion rencontre l'excellence</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">Découvrir le Menu</a>
+                <a href="#reservation" class="btn-secondary">Réserver une Table</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <section id="a-propos" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>👨‍🍳</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2>Notre Histoire</h2>
+                    <p class="lead">Bienvenue chez L'atelier de Ben, où chaque plat raconte une histoire.</p>
+                    <p>Depuis 2015, notre restaurant gastronomique à Saint-Denis célèbre les saveurs authentiques avec une touche de modernité. Le Chef Ben, passionné par la cuisine depuis son plus jeune âge, a créé un lieu où l'art culinaire rencontre la convivialité.</p>
+                    <p>Nous sélectionnons nos ingrédients avec le plus grand soin, privilégiant les producteurs locaux et les saisons pour vous offrir une expérience gastronomique inoubliable.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Années d'excellence</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Plats créatifs</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15K+</span>
+                            <span class="stat-label">Clients satisfaits</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Menu</h2>
+                <p>Découvrez nos créations gastronomiques</p>
+            </div>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="entrees">Entrées</button>
+                <button class="tab-btn" data-tab="plats">Plats</button>
+                <button class="tab-btn" data-tab="desserts">Desserts</button>
+                <button class="tab-btn" data-tab="vins">Vins</button>
+            </div>
+            <div class="menu-content">
+                <div class="tab-content active" id="entrees">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tartare de Saumon</h3>
+                            <span class="price">18€</span>
+                        </div>
+                        <p class="description">Saumon frais, avocat, citron vert, coriandre</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Foie Gras Maison</h3>
+                            <span class="price">24€</span>
+                        </div>
+                        <p class="description">Chutney de figues, pain brioché toasté</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Risotto aux Truffes</h3>
+                            <span class="price">22€</span>
+                        </div>
+                        <p class="description">Riz arborio, truffe noire, parmesan, crème</p>
+                    </div>
+                </div>
+                <div class="tab-content" id="plats">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Filet de Boeuf</h3>
+                            <span class="price">38€</span>
+                        </div>
+                        <p class="description">Sauce au poivre, gratin dauphinois, légumes de saison</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Bar en Croûte de Sel</h3>
+                            <span class="price">34€</span>
+                        </div>
+                        <p class="description">Légumes racines, sauce beurre blanc</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Magret de Canard</h3>
+                            <span class="price">32€</span>
+                        </div>
+                        <p class="description">Sauce au miel et épices, purée de patate douce</p>
+                    </div>
+                </div>
+                <div class="tab-content" id="desserts">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Fondant au Chocolat</h3>
+                            <span class="price">12€</span>
+                        </div>
+                        <p class="description">Cœur coulant, glace vanille maison</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tarte Tatin</h3>
+                            <span class="price">11€</span>
+                        </div>
+                        <p class="description">Pommes caramélisées, crème fraîche</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Crème Brûlée</h3>
+                            <span class="price">10€</span>
+                        </div>
+                        <p class="description">Vanille de Madagascar, fruits rouges</p>
+                    </div>
+                </div>
+                <div class="tab-content" id="vins">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Château Margaux 2015</h3>
+                            <span class="price">180€</span>
+                        </div>
+                        <p class="description">Grand cru classé, notes de cassis et de violette</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Sancerre Blanc</h3>
+                            <span class="price">45€</span>
+                        </div>
+                        <p class="description">Sauvignon blanc, frais et minéral</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Châteauneuf-du-Pape</h3>
+                            <span class="price">65€</span>
+                        </div>
+                        <p class="description">Rouge corsé, épices et fruits mûrs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galerie</h2>
+                <p>Un aperçu de nos créations</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🍲</span>
+                        <p>Plat Signature</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🥗</span>
+                        <p>Entrée Fraîcheur</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🍰</span>
+                        <p>Dessert Gourmand</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🍷</span>
+                        <p>Sélection de Vins</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🍽️</span>
+                        <p>Table Dressée</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>👨‍🍳</span>
+                        <p>En Cuisine</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Réserver une Table</h2>
+                <p>Réservez votre expérience gastronomique</p>
+            </div>
+            <form class="reservation-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nom">Nom complet</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="personnes">Nombre de personnes</label>
+                        <select id="personnes" name="personnes" required>
+                            <option value="1">1 personne</option>
+                            <option value="2" selected>2 personnes</option>
+                            <option value="3">3 personnes</option>
+                            <option value="4">4 personnes</option>
+                            <option value="5">5 personnes</option>
+                            <option value="6">6 personnes</option>
+                            <option value="7+">7 personnes et plus</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="heure">Heure</label>
+                        <select id="heure" name="heure" required>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message spécial (optionnel)</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Confirmer la Réservation</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Nous Contacter</h2>
+                    <div class="contact-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>12 Rue de la République<br>97400 Saint-Denis, La Réunion</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📞</span>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+262 262 12 34 56</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">✉️</span>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@latelierdeben.fr</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">🕐</span>
+                        <div>
+                            <h3>Horaires</h3>
+                            <p>Mardi - Samedi : 12h00 - 14h30 / 19h00 - 22h30<br>Dimanche : 12h00 - 15h00<br>Fermé le Lundi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <span>🗺️</span>
+                        <p>Carte Saint-Denis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>L'atelier de Ben</h3>
+                    <p>Restaurant Gastronomique à Saint-Denis</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📸</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#a-propos">À Propos</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservation">Réservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recevez nos actualités et offres spéciales</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 L'atelier de Ben. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
